@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Almo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="images/logo/fav.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/lightbox.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="fixed-top">
+
+    <!-- NAVBAR   -->
+    <section>
+        <nav class="navbar bg-dark navbar-expand-md justify-content-between align-items-stretch px-3 py-0 opacity">
+            <div>
+                <div class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="images/logo/Logo.png" alt="Almo logo">
+                </div>
+            </div>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-stretch"
+                 id="navbarSupportedContent">
+                <ul class="navbar-nav align-items-center">
+                    <li>
+                        <ul class="scroll-to d-flex">
+                            <li class="nav-item active">
+                                <a class="nav-link navbar-animation" href="#home">Accueil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navbar-animation" href="#what-we-do">Ce que nous faisons</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navbar-animation" href="#projects">Projets</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navbar-animation" href="#about-us">À propos de nous</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link navbar-animation border-right-0" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown d-flex align-items-center border-left h-100 ">
+                        <div class="nav-link navbar-animation dropdown-toggle" id="navbarDropdown" role="button"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg width=".9em"
+                                 height=".9em"
+                                 viewBox="0 0 16 16"
+                                 class="bi bi-globe"
+                                 fill="currentColor"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+                            </svg>
+                            Langue
+                        </div>
+                        <div class="dropdown-menu bg-dark opacity" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index_en.html"><span class="navbar-animation">English</span></a>
+                            <a class="dropdown-item" href="index.html">
+                                <span class="navbar-animation">German</span>
+                            </a>
+                            <a class="dropdown-item" href="index_fr.html">
+                                <span class="navbar-animation">French</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+</header>
+
+
+<main>
+
+    <!-- HOME       -->
+    <section id="home" class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="video-wrapper">
+                    <div class=" overlay video-overlay"></div>
+                    <video autoplay loop muted>
+                        <source src="videos/almo.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+
+                    <div class="row">
+                        <div class="col-md-12 position-absolute vertical-center home-wrapper opacity">
+                            <div class="my-3 p-2 d-flex flex-column align-items-center text-center">
+                                <div class="home-title bottom-animation-slide-in font-weight-bold opacity-0">
+                                    ALMO Bauingenieur
+                                </div>
+
+                                <div class="mt-3">
+                                    <span class="animation-typewriter d-inline-block" data-animation-delay="1500">
+                                        Votre bureau de gènie civil pour la planification structurelle, les plans de construction et la modélisation 3D-BIM
+                                    </span>
+                                </div>
+
+                                <div class="home-scroll mt-5 bottom-animation-slide-in opacity-0 text-uppercase"
+                                     data-animation-delay="7000">
+                                    Défiler l écrant pour plus d’information
+                                </div>
+                                <div>
+                                    <span class="animation-arrow" data-animation-delay="8500"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- WHAT WE DO -->
+
+    <section id="what-we-do">
+
+        <!-- QUOTE -->
+
+        <div  class="bg-dark">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col- ">
+                        <blockquote
+                                class="quote text-right py-1 d-flex flex-column justify-content-center animation-font-in">
+                            <p>“Le success se trouve dans les details.”</p>
+                            <footer class="blockquote-footer mr-4"> Zig Ziglar</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--WHAT WE DO CONTENT-->
+
+        <div class="what-we-do">
+            <div class="container-fluid">
+                <div class="row py-2">
+                    <div class="col-md-8">
+
+                        <h2 class="py-5 text-uppercase font-weight-bold bottom-animation-slide-in">
+                            CE QUE NOUS FAISONS
+                        </h2>
+
+                        <div class="font-italic animation-right-slide-in-small">
+                            <p class="pb-4">
+                                Nous travaillons dans de nombreux domaines différents, mais nous nous concentrons
+                                principalement sur la construction de bâtiments et le génie civil/structurel.
+                                Nous nous specialisons dans la création de plans de coffrage et de ferraillage ainsi
+                                que dans les calculs statiques et les modèles 3D-BIM.
+                                <br>
+                                Notre expérience avec le BIM et notre flux de travail 3D efficace nous ont aidés à
+                                établir et à maintenir une collaboration en ligne extrêmement réussie avec nos clients.
+                            </p>
+                            <p class="pb-4">
+                                Nous travaillons exclusivement avec les programmes de Nemetschek,
+                                <span class="font-weight-bold"> Allplan 2019</span>
+                                pour la création des plans de construction et la modélisation 3D ainsi que
+                                <span class="font-weight-bold"> SCIA </span>
+                                pour es calculs statiques.
+                            </p>
+                            <p class="pb-4">
+                                Travailler avec 3D-BIM nous permet d'être compatible avec de nombreux autres
+                                programmes d'élite tels que Revit, Tekla, AutoCAD et ArchiCAD.
+                            </p>
+                        </div>
+
+                        <div class="row justify-content-between my-3 animation-right-slide-in-small">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="d-inline-block border-bottom my-3">
+                                            <span class="h1 pr-2">#1</span>
+                                            <span class="h2">Plan de constructions</span>
+                                        </div>
+                                        <div class="d-inline-block border-bottom my-3">
+                                            <span class="h1 pr-2">#2</span>
+                                            <span class="h2">Calcules statique</span>
+                                        </div>
+                                        <div class="border-bottom d-inline-block my-3">
+                                            <span class="h1 pr-2">#3</span>
+                                            <span class="h2">Models 3D-BIM</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <img class="img-fluid logo-what-we-do" src="images/what-we-do/a-3.png"
+                                     alt="Allplan logo">
+                                <img class="img-fluid logo-what-we-do"
+                                     src="images/what-we-do/scia.png"
+                                     alt="Scia logo">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 pt-5">
+                        <div class="my-3 animation-right-slide-in-medium">
+                            <h3 class="text-uppercase font-weight-bold font-italic">
+                                PLANS DE FERRAILLAGE
+                            </h3>
+
+                            <div class="carousel-reinforcement-plans carousel slide"
+                                 data-ride="carousel1">
+                                <div class="carousel-inner">
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/01.jpg"
+                                       class="carousel-item active">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/01.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/02.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/02.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/03.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/03.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/04.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/04.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/05.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/05.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/06.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/06.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/07.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/07.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/08.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/08.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/09.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/09.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+                                    <a href="images/what-we-do/reinforcement_plans/gallery/10.jpg"
+                                       data-lightbox="gallery1"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/reinforcement_plans/carousel/10.jpg"
+                                             class="d-block w-100" alt="">
+
+                                    </a>
+                                </div>
+                                <a class="overlay overlay-gallery"
+                                   href="images/what-we-do/reinforcement_plans/gallery/01.jpg"
+                                   data-lightbox="gallery1">
+                                    <div class="text middle">VOIR LA GALERIE</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="my-3 animation-right-slide-in-medium">
+                            <h3 class="text-uppercase font-weight-bold font-italic">
+                                PLAND DE COFFRAGE
+                            </h3>
+
+                            <div class="carousel-formwork-plans carousel slide" data-ride="carousel2">
+                                <div class="carousel-inner">
+                                    <a href="images/what-we-do/formwork_plans/gallery/01.jpg"
+                                       class="carousel-item active">
+                                        <img src="images/what-we-do/formwork_plans/carousel/01.jpg"
+                                             class="d-block w-100" alt="Formwork Plans Gallery Image">
+                                    </a>
+                                    <a href="images/what-we-do/formwork_plans/gallery/02.jpg"
+                                       data-lightbox="gallery2"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/formwork_plans/carousel/02.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+                                    <a href="images/what-we-do/formwork_plans/gallery/03.jpg"
+                                       data-lightbox="gallery2"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/formwork_plans/carousel/03.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+                                    <a href="images/what-we-do/formwork_plans/gallery/04.jpg"
+                                       data-lightbox="gallery2"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/formwork_plans/carousel/04.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+                                    <a href="images/what-we-do/formwork_plans/gallery/05.jpg"
+                                       data-lightbox="gallery2"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/formwork_plans/carousel/05.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+                                    <a href="images/what-we-do/formwork_plans/gallery/06.jpg"
+                                       data-lightbox="gallery2"
+                                       class="carousel-item">
+                                        <img src="images/what-we-do/formwork_plans/carousel/06.jpg"
+                                             class="d-block w-100" alt="">
+                                    </a>
+                                </div>
+
+                                <a class=" overlay overlay-gallery"
+                                   href="images/what-we-do/formwork_plans/gallery/01.jpg"
+                                   data-lightbox="gallery2">
+                                    <div class="text middle">VOIR LA GALERIE</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--QUOTE WITH IMAGE-->
+
+    <div class="parallax-window-big" data-parallax="scroll" data-image-src="images/background-img/bg.img 02.jpg">
+        <div class="vertical-center position-absolute w-100">
+            <div class="container-fluid">
+                <div class="bg-dark row justify-content-center">
+                    <div class="col-md-7">
+                        <blockquote
+                                class="quote quote-fr text-right py-1 m-0 animation-font-in d-flex flex-column justify-content-center">
+                            <div>
+                                “Si vous croyez qu'il coûte cher d'embaucher un professionnel pour faire le
+
+                            </div>
+                            <div>travail, attendez de voir ce que cvous coûtera d'embaucher un amateur.”</div>
+                            <footer class="blockquote-footer">Paul Neal “Red” Adair</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <!--QUOTE  -->
+
+        <div class="bg-dark" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5 pt-3">
+                        <blockquote class="quote text-right py-1 animation-font-in">
+                            <p>“Un objectif sans plan n’est qu’un souhait.” </p>
+                            <footer class="blockquote-footer ">Antoine De Saint-Exupery</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS CONTENT-->
+
+        <div class="almo-projects pt-3 pb-4">
+            <div class="container-fluid pb-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="font-weight-bold text-uppercase text-center py-4 bottom-animation-slide-in">
+                            PROJETS
+                        </h2>
+                    </div>
+                </div>
+
+                <!--ROW-1-->
+                <div class="row font-italic justify-content-center left-animation-slide-in">
+                    <div class="col-md-6">
+                        <hr class="projects-separator">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/13.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Nouvelle construction de 13 maisons de ville</h3>
+                                    <div>
+                                        <p>Idstein, Allemagne</p>
+                                        <p>7.500 m2</p>
+                                        <p>Plans complets de coffrage et de ferraillage</p>
+                                        <p>mars 2021 - août 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+
+                <!--ROW-2-->
+                <div class="row font-italic justify-content-center right-animation-slide-in">
+                    <div class="col-md-6">
+                        <hr class="projects-separator">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/12.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Nouvelle construction de 2 bâtiments résidentiels</h3>
+                                    <div>
+                                        <p>Friedrichsdorf, Allemagne</p>
+                                        <p>4.200 m2</p>
+                                        <p>Plans complets de coffrage et de ferraillage</p>
+                                        <p>janvier 2021 - mars 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="projects-separator">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/11.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Nouvelle construction de 3 bâtiments résidentiels</h3>
+                                    <div>
+                                        <p>Erfurt, Allemagne</p>
+                                        <p>12.000 m2</p>
+                                        <p>Plans complets de coffrage et de ferraillage</p>
+                                        <p>novembre 2020 - mars 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+
+                </div>
+                <!--ROW-3-->
+                <div class="row font-italic left-animation-slide-in">
+                    <div class="col-md-6">
+                        <hr class="projects-separator">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/01.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Nouvelle construction de condominiums et d'appartements locatifs</h3>
+                                    <div>
+                                        <p>Erfurt, Allemagne</p>
+                                        <p>7.500 m2</p>
+                                        <p>Plans complets de coffrage et de ferraillage</p>
+                                        <p>décembre 2019 - avril 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="projects-separator">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/02.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Nouvelle construction de 5 bâtiments résidentiels et commerciaux</h3>
+                                    <div>
+                                        <p>Erfurt, Allemagne</p>
+                                        <p>12.500 m2</p>
+                                        <p>Plans complets de coffrage et de ferraillage</p>
+                                        <p>novembre 2019 - avril 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+                <!--ROW-4-->
+                <div class="row font-italic right-animation-slide-in">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/03.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Salle d'extension - Volkswagen</h3>
+                                    <div>
+                                        <p>Zwickau, Allemagne</p>
+                                        <p>Plans de ferraillage</p>
+                                        <p>mai 2020 - juillet 2020</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/04.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Reconstruction de la maison et de l'atelier</h3>
+                                    <div>
+                                        <p>Neunkirch, Suisse</p>
+                                        <p>750 m2</p>
+                                        <p>Plans de coffrage et de ferraillage</p>
+                                        <p>août 2019 - septembre 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+                <!--ROW-5-->
+                <div class="row font-italic left-animation-slide-in">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/05.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>École</h3>
+                                    <div>
+                                        <p>Mühlheim A.D. Donau, Allemagne</p>
+                                        <p>22.300 m2</p>
+                                        <p>Plans de ferraillage</p>
+                                        <p>février 2019 - août 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/06.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Hildegardishof</h3>
+                                    <div>
+                                        <p>Mengerskirchen, Allemagne</p>
+                                        <p>3.500 m2</p>
+                                        <p>Plans de ferraillage</p>
+                                        <p>uillet 2018 - mars 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+                <!--ROW-6-->
+                <div class="row font-italic right-animation-slide-in">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/07.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Complexe résidentiel Am Griesweg</h3>
+                                    <div>
+                                        <p>Mühlheim A.D. Donau, Allemagne</p>
+                                        <p>2.100 m2</p>
+                                        <p>Plans de coffrage et de ferraillage</p>
+                                        <p>juillet 2018 - décembre 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/08.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>NKT, Halle C409</h3>
+                                    <div>
+                                        <p>Köln, Allemagne</p>
+                                        <p>1.700 m2</p>
+                                        <p>Plans de coffrage et de ferraillage</p>
+                                        <p>août 2018 - septembre 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+                <!--ROW-7-->
+                <div class="row font-italic left-animation-slide-in">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/09.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-between">
+                                    <h3>Hôtel Hirschen Oberkirch</h3>
+                                    <div>
+                                        <p>Oberkirch, Suisse</p>
+                                        <p>4.200 m2</p>
+                                        <p>Plans de ferraillage</p>
+                                        <p>mai 2017 - novembre 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="images/projects/10.jpg" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex flex-column justify-content-around">
+                                    <h3>Alloheim Résidence senior "Sythen am See"</h3>
+                                    <div>
+                                        <p>Haltern am See, Allemagne</p>
+                                        <p>4.500 m2</p>
+                                        <p>Plans de coffrage et de ferraillage</p>
+                                        <p>Calculs statiques et dynamiques</p>
+                                        <p>Plans d'architecture et rendu photo</p>
+                                        <p>février 2016 - octobre 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="projects-separator">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--ABOUT US    -->
+
+    <section id="about-us">
+
+        <!--QUOTE  -->
+
+        <div class="bg-dark" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-11 pt-3">
+                        <blockquote class="quote text-right py-1 animation-font-in">
+                            <p>“Un homme qui ne pense pas et ne planifie pas longtemps à l’avance trouvera des ennuis juste devant sa porte.”</p>
+                            <footer class="blockquote-footer ">Confucius</footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT US CONTENT-->
+        <div class="about-us my-5">
+            <div class="row mb-5 ">
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Aleksandar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Aleksandar Matoski</h4>
+                            <h5 class="card-text">Dipl.ing.Hochbau</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Monika.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Monika Matoska</h4>
+                            <h5 class="card-text">M.A.Architektur</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-7 pt-1">
+                    <div class="font-italic animation-right-slide-in-small">
+                        <p class="pb-2">
+                            Nous sommes une entrepreise familiale compossee de sept ingénieurs et architectes.
+                            Notre équipe d’ingénieurs et d’archietectes hautement qualifiées, jeunes et
+                            motifs est prete a vous offrir tous les servies ne vous avez pas besoin.
+                            Avec passion et une part de curiosité, nous sommes toujours prets a
+                            relever de nouveaux defis.
+                        </p>
+                        <p class="pb-2">
+                            Au cours des trois dernières années, nous travaillons avec succès en tant que prestataires
+                            de services externes tout en soutenant avec succès d'autres sociétés d'ingénierie plus
+                            petites et plus grandes en Suisse, en Allemagne, en Autriche et au Luxembourg.
+                        </p>
+                        <p>
+                            Une partie très importante de notre philosophie de travail d'équipe est de nous assurer que
+                            nos clients se sentent comme nos partenaires dans chaque projet. Cette façon de travailler
+                            conduit à une collaboration longue et fructueuse. Notre équipe accueille chaque nouveau défi
+                            avec enthousiasme sous le slogan «La qualité prime sur la quantité».
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Vlatko.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Vlatko Matoski</h4>
+                            <h5 class="card-text">Dipl.ing.Hochbau</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Branka.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Branka Stoimenova</h4>
+                            <h5 class="card-text">M.Sc.Bauingineur</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Biljana.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Biljana Tolkova</h4>
+                            <h5 class="card-text">M.A.Architektur</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Kristina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Kristina Ickovska</h4>
+                            <h5 class="card-text">Bauingenieur Tiefbau</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card animation-fade-in p-2 text-center">
+                        <img src="images/about-us/Violeta.jpg" class="card-img-top" alt="...">
+                        <div class="card-body p-1">
+                            <h4 class="card-title m-0">Violeta Stanojkovska</h4>
+                            <h5 class="card-text">Hochbauzeichnerin</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/background-img/bg.img 01.jpg"></div>
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <!-- QUOTE -->
+
+        <div class="bg-dark" >
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-">
+                        <blockquote class="quote big-quote py-1 m-0 animation-font-in">
+                            <div>“le quel est plus important?”
+                                <footer class="d-inline"> demander par Big Panda,</footer>
+                                “Le voyage ou la destination?”
+                            </div>
+                            <div>
+                                “La compagnie”
+                                <footer class="d-inline"> dit Tiny Dragon.</footer>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT CONTENT-->
+
+        <div class="contact-info">
+            <div class="container-md">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center text-uppercase font-weight-bold bottom-animation-slide-in pt-4 pb-2">
+                            Contact
+                        </h2>
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="row justify-content-between animation-right-slide-in-small">
+                                    <div class="col-md-3 text-left">
+                                        <div>
+                                            <h3 class="mb-2">Almo CH</h3>
+                                        </div>
+                                        <div class="font-italic">
+                                            <p>Hauentalstrasse 31</p>
+                                            <p>8200 Schaffhausen</p>
+                                            <p>Suisse</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5 text-left">
+                                        <h3 class="mb-2">Dipl.Ing. Aleksandar Matoski</h3>
+                                        <div class="font-italic">
+                                            <p>
+                                                <svg width="1.1em"
+                                                     height="1em"
+                                                     viewBox="0 0 16 16"
+                                                     class="bi bi-telephone pr-2"
+                                                     fill="currentColor"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                                </svg>
+                                                T +41 (0)44 586 99 50
+                                            </p>
+                                            <p>
+                                                <svg width="1.1em"
+                                                     height="1em"
+                                                     viewBox="0 0 16 16"
+                                                     class="bi bi-phone pr-2"
+                                                     fill="currentColor"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                          d="M11 1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                                    <path fill-rule="evenodd"
+                                                          d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                </svg>
+                                                M +41 (0)76 298 02 78
+                                            </p>
+                                            <p>
+                                                <svg
+                                                        width="1.1em"
+                                                        height="1em"
+                                                        viewBox="0 0 16 16"
+                                                        class="bi bi-envelope pr-2"
+                                                        fill="currentColor"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                                </svg>
+                                                a.matoski@almo-bauingenieure.ch
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row pb-3 pt-3">
+                    <div class="col-md-12">
+                        <a href="https://g.page/ALMOBauingenieur?share" target="_blank">
+                            <div class="position-relative">
+                                <div class="overlay overlay-map"></div>
+
+                                <img class="img-fluid animation-fade-in"
+                                     src="images/map/location.jpg"
+                                     alt="Almo map">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  QUOTE      -->
+    <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <blockquote
+                            class="quote text-right py-1 animation-font-in d-flex flex-column justify-content-center">
+                        <p>“Où que tu ailles, vas-y avec tout ton Coeur!”</p>
+                        <footer class="blockquote-footer mr-4">Confusius</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+<footer class="text-center small footer">
+    &copy; Almo CH 2020
+</footer>
+<script src="js/lightbox-plus-jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/active-menu-link.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

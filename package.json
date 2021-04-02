@@ -1,0 +1,17 @@
+{
+  "name": "project_almo_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "active-menu-link": "^1.1.8",
+    "bootstrap-icons": "^1.0.0",
+    "jquery-parallax.js": "^1.5.0",
+    "lightbox2": "^2.11.3"
+  }
+}
