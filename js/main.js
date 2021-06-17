@@ -16,23 +16,37 @@ lightbox.option({
 });
 
 /* ANIMATIONS */
+let observer = new IntersectionObserver((intersectionObserverEntry) => {
+    intersectionObserverEntry.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            if (typeof entry.target.dataset.animationDelay != 'undefined') {
+                let delay = entry.target.dataset.animationDelay;
+                setTimeout(() => entry.target.classList.add('show'), delay);
+            } else {
+                entry.target.classList.add('show');
+            }
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+let observer2 = new IntersectionObserver((intersectionObserverEntry) => {
+    intersectionObserverEntry.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+            if (typeof entry.target.dataset.animationDelay != 'undefined') {
+                let delay = entry.target.dataset.animationDelay;
+                setTimeout(() => entry.target.classList.add('show'), delay);
+            } else {
+                entry.target.classList.add('show');
+            }
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
 
 function createObservers() {
-    let observer = new IntersectionObserver((intersectionObserverEntry) => {
-        intersectionObserverEntry.forEach(entry => {
-            if (entry.intersectionRatio > 0) {
-                if (typeof entry.target.dataset.animationDelay != 'undefined') {
-                    let delay = entry.target.dataset.animationDelay;
-                    setTimeout(() => entry.target.classList.add('show'), delay);
-                } else {
-                    entry.target.classList.add('show');
-                }
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
-    });
-
     let animationClasses = [
         '.left-animation-slide-in',
         '.left-animation-slide-in',
@@ -50,12 +64,38 @@ function createObservers() {
     document.querySelectorAll(animationClasses.join(',')).forEach((element) => observer.observe(element));
 }
 
+function createObservers2() {
+    let animationClassesAlways = [
+        '.bottom-animation-slide-in-always',
+        '.animation-typewriter',
+        '.animation-arrow'
+    ];
+
+    // Attach observers
+    document.querySelectorAll(animationClassesAlways.join(',')).forEach((element) => observer2.observe(element));
+}
+
+function removeObservers() {
+    observer.disconnect();
+}
 
 // Create event listener
 window.addEventListener("load", (event) => {
-    createObservers();
+    if (window.innerWidth >= 1200) {
+        createObservers();
+    }
+
+    createObservers2();
 }, false);
 
+window.addEventListener("resize", (event) => {
+    if (window.innerWidth >= 1200) {
+        createObservers();
+    } else {
+        removeObservers();
+    }
+
+}, false);
 /* PARALLAX PLUGIN */
 
 $('.parallax-window').parallax({

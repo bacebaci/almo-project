@@ -1,0 +1,351 @@
+/* Responsive style for Large devices (desktops, 992px and up */
+@media (min-width: 1900px) {
+    .carousel-inner {
+        min-height: 280px;
+    }
+}
+
+@media (min-width: 1451px) and (max-width: 1675px){
+    .quote {
+        font-size: 2.2rem;
+    }
+    .big-quote {
+        min-height: 115px !important;
+    }
+
+    .quote-fr {
+        min-height: 140px !important;
+    }
+    @keyframes font-in {
+        0% {
+            opacity: 0;
+            font-size: 1rem;
+
+        }
+        100% {
+            font-size: 2.2rem;
+            opacity: 1;
+
+        }
+    }
+}
+
+@media (min-width: 1670px) {
+
+    .big-quote {
+        min-height: 130px !important;
+    }
+    .quote-fr {
+        min-height: 155px !important;
+    }
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1460px) {
+    .h1 {
+        font-size: 2.3rem;
+    }
+
+    .h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-link, .navbar .dropdown-item {
+        margin: 0.5rem 0.4rem;
+    }
+
+    .visible-logo {
+        display: none;
+    }
+
+    .what-we-do .hidden-logo {
+        display: flex;
+    }
+
+    .logo-what-we-do {
+        margin: 5px;
+    }
+
+
+}
+
+@media (min-width: 1201px) and (max-width: 1482px) {
+
+
+    h2 {
+        font-size: 2rem;
+    }
+    .home-wrapper {
+        font-size: 2rem;
+    }
+
+    .home-title {
+        font-size: 3.3rem;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+        min-height: 90px;
+    }
+    .big-quote {
+        min-height: 95px !important;
+    }
+    .quote-fr {
+        min-height: 120px !important;
+    }
+
+    @keyframes font-in {
+        0% {
+            opacity: 0;
+            font-size: 1rem;
+
+        }
+        100% {
+            font-size: 1.8rem;
+            opacity: 1;
+
+        }
+    }
+
+
+
+
+    .almo-projects {
+        line-height: 1.1;
+    }
+
+    .projects-description {
+        min-height: 166px;
+    }
+
+    .about-us-story {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    }
+
+    .card h4, .card h5 {
+        font-size: 1.35rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-brand img {
+        max-height: 60px;
+    }
+
+    .quote {
+        font-size: 1.7rem;
+        min-height: 90px;
+    }
+
+    .quote-fr {
+        min-height: 115px !important;
+    }
+
+
+    .dropdown-menu {
+        min-width: 10rem;
+    }
+
+
+    .navbar .scroll-to {
+        padding: 0;
+    }
+
+    .home-wrapper {
+        font-size: 1.9rem;
+    }
+
+    .home-wrapper-fr {
+        font-size: 1.7rem;
+    }
+
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .home-scroll {
+        font-size: 1.3rem;
+    }
+
+    .what-we-do {
+        padding: 0 3%;
+    }
+
+    .what-we-do h3 {
+        font-size: 1.5rem;
+    }
+
+    .projects-separator {
+        width: 100%;
+    }
+
+    .about-us-story {
+        margin-left: 1rem;
+        width: 60%;
+    }
+
+    .card h4, .card h5 {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1054px) {
+    .quote-font {
+        font-size: 1.6rem;
+        min-height: 90px;
+    }
+
+}
+
+
+
+@media (max-width: 991px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+
+    .navbar-mobile {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .navbar .nav-link, .navbar .dropdown-item {
+        line-height: normal;
+        display: inline-block;
+
+    }
+
+    .mobile-language {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .mobile-language .nav-item {
+        padding: 0 10%;
+    }
+
+    .home-wrapper {
+        font-size: 1.7rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .animation-arrow.show {
+        width: 25px;
+        height: 25px;
+    }
+
+    .home-scroll {
+        font-size: 1.1rem;
+    }
+
+    .quote {
+        font-size: 1.6rem;
+        min-height: 80px;
+    }
+
+    .h1 {
+        font-size: 2.3rem;
+    }
+
+    .h2 {
+        font-size: 1.8rem;
+    }
+
+    .border-left {
+        border-left: 0!important;
+    }
+
+    .what-we-do {
+        padding: 0 3%;;
+    }
+    .logo-what-we-do {
+        max-width: 70%;
+    }
+
+
+    .almo-projects {
+        padding: 0;
+    }
+    .almo-projects h3 {
+        margin-top: 5%;
+    }
+    .almo-projects img {
+        display: block;
+        margin: 5% auto;
+    }
+    .projects-separator {
+        display: none;
+    }
+
+    .about-us {
+        padding: 0 3%;
+    }
+
+    .card {
+        margin-right: 1.8%;
+        width: 23%;
+        margin-bottom: 20px;
+    }
+
+    .about-us-story {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .card h4, .card h5 {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .logo-what-we-do {
+        max-width: 50%;
+        display: block;
+        margin: 4% auto;
+    }
+
+    .flex-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .quote-width-82 {
+        width: 100%;
+    }
+
+    .projects-information {
+        text-align: center;
+        /*width: 66%;*/
+        margin: 0 auto;
+        padding: 0 22px;
+    }
+
+    .animation-typewriter.show {
+        font-size: 21px;
+    }
+}
