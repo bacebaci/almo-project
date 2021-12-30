@@ -1,4 +1,4 @@
-/* Responsive style for Large devices (desktops, 992px and up */
+
 @media (min-width: 1900px) {
     .carousel-inner {
         min-height: 280px;
@@ -115,9 +115,11 @@
     .almo-projects {
         line-height: 1.1;
     }
-
     .projects-description {
-        min-height: 166px;
+        min-height: 250px;
+    }
+    .projects-information {
+        min-height: 200px;
     }
 
     .about-us-story {
@@ -340,7 +342,6 @@
 
     .projects-information {
         text-align: center;
-        /*width: 66%;*/
         margin: 0 auto;
         padding: 0 22px;
     }
